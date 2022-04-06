@@ -1,0 +1,2 @@
+<strong><%= first_name(@user) %></strong> (<%= @user.id %>)
+<%# se usa las funciones de la view, para poder imprimir en pantalla el usr %>
