@@ -48,7 +48,7 @@ if config_env() == :prod do
       environment variable WOLFRAM_APP_ID is missing.
     """
 
-  # config :info_sys, :wolfram, app_id: wolfram_app_id
+  config :info_sys, :wolfram, app_id: wolfram_app_id
   # ## Using releases
   #
   # If you are doing OTP releases, you need to instruct Phoenix
