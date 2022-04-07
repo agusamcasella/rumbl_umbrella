@@ -26,7 +26,11 @@ config :rumbl_web, RumblWeb.Endpoint,
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+
   ]
+
+  # wolfram_app_id = System.get_env("WOLFRAM_APP_ID") || raise "environment variable WOLFRAM_APP_ID is missing."
+  # config :info_sys, :wolfram, app_id: wolfram_app_id
 
 # ## SSL Support
 #
