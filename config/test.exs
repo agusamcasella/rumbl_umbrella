@@ -29,5 +29,10 @@ config :rumbl, Rumbl.Mailer, adapter: Swoosh.Adapters.Test
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
 
-              #  acortar tiempo de hsheo de la pass.
+#  acortar tiempo de hsheo de la pass.
 config :pbkdf2_elixir, :rounds, 1
+
+
+config :info_sys, :wolfram,
+  app_id: "1234",
+  http_client: InfoSys.Test.HTTPClient
