@@ -35,7 +35,7 @@ config :rumbl_web, RumblWeb.Endpoint,
       environment variable WOLFRAM_APP_ID is missing.
     """
 
-  config :info_sys, :wolfram, app_id: wolfram_app_id
+  config :info_sys, :wolfram, app_id: "wolfram_app_id"
 
 # ## SSL Support
 #
